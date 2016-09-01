@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入内容"/>
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_below="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送UDP数据"/>
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_below="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="切割字符串"/>
+    <TextView
+        android:layout_below="@+id/btn_2"
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_below="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取图片" />
+    <ImageView
+        android:layout_below="@+id/btn_3"
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_below="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送TCP数据"/>
+</RelativeLayout>

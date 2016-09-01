@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainscreen_bg"
+  	android:gravity="center"
+    >
+	<LinearLayout
+	    android:orientation="vertical" 
+	    style="@style/sub_sys_main_item"
+	    android:gravity="center" android:focusable="true"  
+	    android:focusableInTouchMode="true">
+	    <RelativeLayout android:id="@+id/timeseg_name_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_namestr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"  android:paddingLeft="10.0dip"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<EditText android:id="@+id/timeseg_name"
+	    		android:layout_width="140.0dip" android:layout_height="40.0dip"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:singleLine="true" android:maxLength="20"
+	    		android:layout_marginTop="5.0dip"
+	    		android:background="@drawable/text_edit"
+	    		android:layout_toRightOf="@id/timeseg_namestr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_weekctr_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_weekctrstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"  android:paddingLeft="10.0dip"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<Button android:id="@+id/timeseg_weekctr" android:layout_width="140.0dip"
+	     	  	android:layout_height="wrap_content" android:background="@drawable/spinner_btn_dropdown"
+	     		android:text="@string/choose" android:layout_marginTop="5.0dip"
+	     		android:textColor="#000000" android:textSize="16sp"
+	     		android:layout_toRightOf="@id/timeseg_weekctrstr"
+	     	  />
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_startdate_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_startdatestr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"  android:paddingLeft="10.0dip"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	     	<Button android:id="@+id/timeseg_startdate"         
+	     	  	android:layout_width="140.0dip"        
+	     	  	android:layout_height="wrap_content"     
+	     	  	android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"  android:layout_marginTop="5.0dip"
+	     	  	android:layout_gravity="center_horizontal"
+	     	  	android:layout_toRightOf="@id/timeseg_startdatestr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_enddate_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_enddatestr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"  android:paddingLeft="10.0dip"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	     	<Button android:id="@+id/timeseg_enddate"         
+	     	  	android:layout_width="140.0dip"        
+	     	  	android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000" android:layout_marginTop="5.0dip"
+	     	  	android:layout_height="wrap_content"        
+	     	  	android:layout_gravity="center_horizontal"
+	     	  	android:layout_toRightOf="@id/timeseg_enddatestr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_starttime1_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_starttime1str"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	     	<Button android:id="@+id/timeseg_starttime1"         
+	     	  	android:layout_width="140.0dip"        
+	     	  	android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"
+	     	  	android:layout_height="wrap_content"        
+	     	  	android:layout_gravity="center_horizontal"
+	     	  	android:layout_toRightOf="@id/timeseg_starttime1str"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_endtime1_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_endtime1str"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	     	<Button android:id="@+id/timeseg_endtime1"         
+	     	  	android:layout_width="140.0dip"        
+	     	  	android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"
+	     	  	android:layout_height="wrap_content"        
+	     	  	android:layout_gravity="center_horizontal"
+	     	  	android:layout_toRightOf="@id/timeseg_endtime1str"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_starttime2_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_starttime2str"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	     	<Button android:id="@+id/timeseg_starttime2"         
+	     	  	android:layout_width="140.0dip"        
+	     	  	android:layout_height="wrap_content"        
+	     	  	android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000" android:layout_marginTop="5.0dip"
+	     	  	android:layout_gravity="center_horizontal"
+	     	  	android:layout_toRightOf="@id/timeseg_starttime2str"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_endtime2_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_endtime2str"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	     	<Button android:id="@+id/timeseg_endtime2"         
+	     	  	android:layout_width="140.0dip"        
+	     	  	android:layout_height="wrap_content"       
+	     	  	android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000" android:layout_marginTop="5.0dip"
+	     	  	android:layout_gravity="center_horizontal"
+	     	  	android:layout_toRightOf="@id/timeseg_endtime2str"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_starttime3_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_starttime3str"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	     	<Button android:id="@+id/timeseg_starttime3"         
+	     	  	android:layout_width="140.0dip"        
+	     	  	android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000" android:layout_marginTop="5.0dip"
+	     	  	android:layout_height="wrap_content"        
+	     	  	android:layout_gravity="center_horizontal"
+	     	  	android:layout_toRightOf="@id/timeseg_starttime3str"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_endtime3_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" >
+	    	<TextView android:id="@+id/timeseg_endtime3str"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	     	<Button android:id="@+id/timeseg_endtime3"         
+	     	  	android:layout_width="140.0dip"        
+	     	  	android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000" android:layout_marginTop="5.0dip"
+	     	  	android:layout_height="wrap_content"        
+	     	  	android:layout_gravity="center_horizontal"
+	     	  	android:layout_toRightOf="@id/timeseg_endtime3str"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/timeseg_operate_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginBottom="10.0dip"
+	    	>
+	    	<Button android:id="@+id/timeseg_operate_save"
+	    		android:layout_width="70.0dip" android:layout_height="wrap_content"
+	    		android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"
+	    		android:text="@string/save"/>
+	    	<Button android:id="@+id/timeseg_operate_cancel"
+	    		android:layout_width="70.0dip" android:layout_height="wrap_content"
+	    		android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000" 
+	    		android:text="@string/cancel"
+	    		android:layout_toRightOf="@id/timeseg_operate_save"/>
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

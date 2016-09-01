@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"  
+    android:focusableInTouchMode="true"
+    android:background="@drawable/mainscreen_bg">
+	<ListView
+		android:id="@+id/destory_list_content"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbars="none"    
+        android:dividerHeight="1.0dip" 
+        android:cacheColorHint="@null"
+        android:divider="#D6D6D6"/>
+</LinearLayout>

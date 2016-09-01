@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainscreen_bg"
+  	android:gravity="center"
+    >
+	<LinearLayout
+	    android:orientation="vertical" 
+	    style="@style/sub_sys_main_item"
+	    android:gravity="center" android:focusable="true"  
+	    android:focusableInTouchMode="true">
+	    <RelativeLayout android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:layout_marginTop="20dip" android:gravity="center">
+	        <RadioGroup android:layout_height="wrap_content" android:id="@+id/card_type" 
+	        	android:layout_alignParentTop="true" android:layout_width="wrap_content"
+	        	android:orientation="horizontal">
+	            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" 
+	            	android:id="@+id/LF" android:text="@string/LF" android:checked="true"
+	            	android:textColor="#000000" android:textSize="16sp"/>
+	            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" 
+	            	android:id="@+id/HF" android:text="@string/HF"
+	           	 	android:textColor="#000000" android:textSize="16sp"
+	            	android:layout_marginLeft="8.0dip"/>
+	        </RadioGroup>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/account_cardid8bit_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" 
+	    	>
+	    	<TextView android:id="@+id/account_cardid8bitstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<EditText android:id="@+id/account_cardid8bit"
+	    		android:layout_width="130.0dip" android:layout_height="40.0dip"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:editable="false" android:clickable="false"
+	    		android:singleLine="true" android:maxLength="20"
+	    		android:background="@drawable/text_edit"
+	    		android:layout_toRightOf="@id/account_cardid8bitstr"/>
+	    	<Button android:id="@+id/account_readcard"
+	    		android:layout_width="70.0dip" android:layout_height="wrap_content"
+	    		android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"
+	    		android:text="@string/readcard"
+				android:layout_toRightOf="@id/account_cardid8bit"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/account_name_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" 
+	    	>
+	    	<TextView android:id="@+id/account_namestr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<EditText android:id="@+id/account_name"
+	    		android:layout_width="200.0dip" android:layout_height="40.0dip"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:singleLine="true" android:maxLength="20"
+	    		android:background="@drawable/text_edit"
+	    		android:layout_toRightOf="@id/account_namestr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/account_userid_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip">
+	    	<TextView android:id="@+id/account_useridstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<EditText android:id="@+id/account_userid"
+	    		android:layout_width="200.0dip" android:layout_height="40.0dip"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:numeric="integer"
+	    		android:singleLine="true" android:maxLength="20"
+	    		android:background="@drawable/text_edit"
+	    		android:layout_toRightOf="@id/account_useridstr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/account_dept_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" 
+	    	>
+	    	<TextView android:id="@+id/account_deptstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<Button android:id="@+id/account_deptcode" android:layout_width="200.0dip"
+	     	  	android:layout_height="wrap_content" android:background="@drawable/spinner_btn_dropdown"
+	     		android:text="@string/choose" android:layout_marginTop="5.0dip"
+	     		android:textColor="#000000" android:textSize="16sp"
+	     		android:layout_toRightOf="@id/account_deptstr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/account_position_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" 
+	    	>
+	    	<TextView android:id="@+id/account_positionstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<Button android:id="@+id/account_postcode" android:layout_width="200.0dip"
+	     	  	android:layout_height="wrap_content" android:background="@drawable/spinner_btn_dropdown"
+	     		android:text="@string/choose" android:layout_marginTop="5.0dip"
+	     		android:textColor="#000000" android:textSize="16sp"
+	     		android:layout_toRightOf="@id/account_positionstr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/account_operate_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginBottom="10.0dip" android:layout_marginTop="10.0dip" 
+	    	>
+	    	<Button android:id="@+id/account_operate_save"
+	    		android:layout_width="70.0dip" android:layout_height="wrap_content"
+	    		android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"
+	    		android:text="@string/save"/>
+	    	<Button android:id="@+id/account_operate_cancel"
+	    		android:layout_width="70.0dip" android:layout_height="wrap_content"
+	    		android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"
+	    		android:text="@string/cancel"
+	    		android:layout_toRightOf="@id/account_operate_save"/>
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

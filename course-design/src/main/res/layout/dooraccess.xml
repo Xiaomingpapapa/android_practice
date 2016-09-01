@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="fill_parent"
+  android:background="@drawable/mainscreen_bg" android:orientation="vertical"
+  android:gravity="center">
+  	  <LinearLayout
+  	  		android:layout_width="wrap_content" android:layout_height="wrap_content"
+  	  		android:orientation="horizontal">
+  	  	<ImageView android:id="@+id/door1" android:src="@drawable/close"
+  	  		android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  	  	<!--<ImageView android:id="@+id/door2" android:src="@drawable/close"
+  	  		android:layout_width="wrap_content" android:layout_height="wrap_content"
+  	  		android:paddingLeft="40.0dip"/>-->
+  	  </LinearLayout>
+	  <com.xunfang.experiment.dooraccess.widget.Sub_sys_main_common android:id="@+id/sub_sys_dooraccess" 
+	  		style="@style/sub_sys_main_item" />
+</LinearLayout>

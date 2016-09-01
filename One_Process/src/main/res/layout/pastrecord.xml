@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.example.myapplication.HistogramView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue4">
+
+        <ImageButton
+            android:id="@+id/image_btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:src="@drawable/arrows" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="历史记录"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:dividerHeight="15dp"
+        android:layout_alignParentBottom="true"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" android:background="@drawable/mainscreen_bg"
+	android:gravity="center">
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="center">
+		<HorizontalScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:layout_centerHorizontal="true" android:isScrollContainer="true">
+	    	<TableLayout android:scrollbarStyle="outsideInset" android:id="@+id/cardoperate_main_sub" 
+	    		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	        	<TableRow>
+	            	<com.xunfang.experiment.dooraccess.widget.Main_item android:id="@+id/cardoperate_main_sub_00" 
+	            		style="@style/sub_sys_item" />
+	            	<com.xunfang.experiment.dooraccess.widget.Main_item android:id="@+id/cardoperate_main_sub_01" 
+	                	style="@style/sub_sys_item" />
+	            </TableRow>
+	            <TableRow android:layout_marginTop="7.0dip">
+	                <com.xunfang.experiment.dooraccess.widget.Main_item android:id="@+id/cardoperate_main_sub_02" 
+	            		style="@style/sub_sys_item" />
+	            	<com.xunfang.experiment.dooraccess.widget.Main_item android:id="@+id/cardoperate_main_sub_03" 
+	                	style="@style/sub_sys_item" />
+	            </TableRow>
+	            <TableRow android:layout_marginTop="7.0dip">
+	                <com.xunfang.experiment.dooraccess.widget.Main_item android:id="@+id/cardoperate_main_sub_04" 
+	            		style="@style/sub_sys_item" />
+	            	<com.xunfang.experiment.dooraccess.widget.Main_item android:id="@+id/cardoperate_main_sub_05" 
+	                	style="@style/sub_sys_item" />
+	            </TableRow>
+	         </TableLayout>
+	     </HorizontalScrollView>
+	</RelativeLayout>
+</LinearLayout>

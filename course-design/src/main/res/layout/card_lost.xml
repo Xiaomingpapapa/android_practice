@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainscreen_bg"
+  	android:gravity="center"
+    >
+	<LinearLayout
+	    android:orientation="vertical" 
+	    style="@style/sub_sys_main_item"
+	    android:gravity="center" android:focusable="true"  
+	    android:focusableInTouchMode="true">
+		<RelativeLayout android:id="@+id/lost_cardsn_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" 
+	    	>
+	    	<TextView android:id="@+id/lost_cardsnstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:paddingLeft="15.0dip"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<EditText android:id="@+id/lost_cardsn"
+	    		android:layout_width="200.0dip" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:editable="false"
+	    		android:background="@drawable/text_edit"
+	    		android:singleLine="true" android:maxLength="20"
+	    		android:layout_toRightOf="@id/lost_cardsnstr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/lost_name_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" 
+	    	>
+	    	<TextView android:id="@+id/lost_namestr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<EditText android:id="@+id/lost_name"
+	    		android:layout_width="200.0dip" android:layout_height="40.0dip"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:singleLine="true" android:maxLength="20"
+	    		android:background="@drawable/text_edit"
+	    		android:layout_toRightOf="@id/lost_namestr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/lost_userid_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" 
+	    	>
+	    	<TextView android:id="@+id/lost_useridstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<EditText android:id="@+id/lost_userid"
+	    		android:layout_width="200.0dip" android:layout_height="40.0dip"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:singleLine="true" android:maxLength="20"
+	    		android:numeric="integer"
+	    		android:background="@drawable/text_edit"
+	    		android:layout_toRightOf="@id/lost_useridstr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/lost_dept_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip" 
+	    	>
+	    	<TextView android:id="@+id/lost_deptstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<Button android:id="@+id/lost_deptcode" android:layout_width="200.0dip"
+	     	  	android:layout_height="wrap_content" android:background="@drawable/spinner_btn_dropdown"
+	     		android:text="@string/choose"
+	     		android:textColor="#000000" android:textSize="16sp"
+	     		android:layout_toRightOf="@id/lost_deptstr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/lost_position_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginTop="10.0dip">
+	    	<TextView android:id="@+id/lost_positionstr"
+	    		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    		android:textColor="#000000" android:textSize="16sp"
+	    		android:text="@string/loginnamestr" android:paddingTop="10.0dip"/>
+	    	<Button android:id="@+id/lost_postcode" android:layout_width="200.0dip"
+	     	  	android:layout_height="wrap_content" android:background="@drawable/spinner_btn_dropdown"
+	     		android:text="@string/choose"
+	     		android:textColor="#000000" android:textSize="16sp"
+	     		android:layout_toRightOf="@id/lost_positionstr"/>
+	    </RelativeLayout>
+	    <RelativeLayout android:id="@+id/lost_operate_module"
+	    	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	android:layout_marginBottom="10.0dip"
+	    	>
+	    	<Button android:id="@+id/lost_operate_qry"
+	    		android:layout_width="70.0dip" android:layout_height="wrap_content"
+	    		android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"
+	    		android:text="@string/query"/>
+	    	<Button android:id="@+id/lost_operate_cancel"
+	    		android:layout_width="70.0dip" android:layout_height="wrap_content"
+	    		android:background="@drawable/btn"
+				android:textSize="@dimen/LargeTextSize"
+				android:textColor="#000000"
+	    		android:text="@string/cancel"
+	    		android:layout_toRightOf="@id/lost_operate_qry"/>
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

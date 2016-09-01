@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="languages">
+        <item>CANADA</item>
+        <item>FRANCE</item>
+        <item>GERMAN</item>
+        <item>JAPANESE</item>
+        <item>ITALIAN</item>
+
+    </array>
+</resources>
